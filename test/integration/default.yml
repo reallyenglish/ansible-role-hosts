@@ -3,8 +3,6 @@
     - ansible-role-hosts
   vars:
     hosts_enable_localhost: true
-    hosts_additional_loopback:
-      - "{{ ansible_hostname }}"
     hosts_map:
       "192.168.100.1":
         - foo

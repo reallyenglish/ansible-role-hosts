@@ -1,4 +1,3 @@
 hosts_map: {}
 hosts_enable_localhost: true
 hosts_enable_ipv6: true
-hosts_additional_loopback: []
