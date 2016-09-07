@@ -2,6 +2,8 @@
 driver:
   name: vagrant
 
+transport: rsync
+
 provisioner:
   hosts: test-kitchen
   name: ansible_playbook
@@ -20,6 +22,22 @@ provisioner:
 
 platforms:
   - name: ansible-freebsd-10.3-amd64
+    driver:
+      box: trombik/ansible-freebsd-10.3-amd64
+      box_check_update: false
+    driver_config:
+      ssh:
+        shell: '/bin/sh'
+
+  - name: openbsd-5.9-amd64
+    driver:
+      box: trombik/ansible-freebsd-10.3-amd64
+      box_check_update: false
+    driver_config:
+      ssh:
+        shell: '/bin/sh'
+
+  - name: openbsd-6.0-amd64
     driver:
       box: trombik/ansible-freebsd-10.3-amd64
       box_check_update: false
