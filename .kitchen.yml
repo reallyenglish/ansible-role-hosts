@@ -59,7 +59,7 @@ platforms:
 
   - name: centos-7.2-x86_64
     driver:
-      box: trombik/ansible-ubuntu-14.04-amd64
+      box: trombik/ansible-centos-7.2-x86_64
       box_check_update: false
 
 suites:
