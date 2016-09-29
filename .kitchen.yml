@@ -2,7 +2,8 @@
 driver:
   name: vagrant
 
-transport: rsync
+transport:
+  name: rsync
 
 provisioner:
   hosts: test-kitchen
@@ -19,7 +20,7 @@ provisioner:
   ansible_vault_password_file: <%= File.expand_path(ENV['ANSIBLE_VAULT_PASSWORD_FILE'] || '') %>
 
 platforms:
-  - name: ansible-freebsd-10.3-amd64
+  - name: freebsd-10.3-amd64
     driver:
       box: trombik/ansible-freebsd-10.3-amd64
       box_check_update: false
