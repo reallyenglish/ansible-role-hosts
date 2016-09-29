@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# rack 2.x requires ruby >= 2.2.2
+gem 'rack', '~> 1.6.4'
+
 gem 'rake', '~> 11.1.2'
 gem 'rspec', '~> 3.4.0'
 gem "test-kitchen", '~> 1.6.0'
