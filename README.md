@@ -1,6 +1,6 @@
 # ansible-role-hosts
 
-A brief description of the role goes here.
+Manages `/etc/hosts`
 
 # Requirements
 
@@ -10,9 +10,9 @@ None
 
 | Variable | Description | Default |
 |----------|-------------|---------|
-| hosts\_map | dict containing mapping of hostname and IP address (see an example below)| {} |
-| hosts\_enable\_localhost | if true, create an entry of `localhost` | true |
-| hosts\_enable\_ipv6 | if true, create an entry of IPv6 version of `localhost` | true |
+| `hosts_map` | dict containing mapping of hostname and IP address (see an example below)| {} |
+| `hosts_enable_localhost` | if true, create an entry of `localhost` | true |
+| `hosts_enable_ipv6` | if true, create an entry of IPv6 version of `localhost` | true |
 
 Created by [yaml2readme.rb](https://gist.github.com/trombik/b2df709657c08d845b1d3b3916e592d3)
 
@@ -36,9 +36,9 @@ None
         - buz
 ```
 
-
 # License
 
+```
 Copyright (c) 2016 Tomoyuki Sakurai <tomoyukis@reallyenglish.com>
 
 Permission to use, copy, modify, and distribute this software for any
@@ -52,6 +52,7 @@ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
 WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
 ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+```
 
 # Author Information
 
