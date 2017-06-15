@@ -1,6 +1,0 @@
----
-
-- name: Install hosts
-  pkgng:
-    name: hosts
-    state: present
