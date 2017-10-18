@@ -1,4 +1,4 @@
 hosts_map: {}
 hosts_enable_localhost: true
 hosts_enable_ipv6: true
-hosts_extra_localhost: []
+hosts_extra_localhosts: []

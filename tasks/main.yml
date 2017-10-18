@@ -1,9 +1,9 @@
 ---
 # tasks file for ansible-role-hosts
 
-- name: Set hosts_extra_localhost
+- name: Set hosts_extra_localhosts
   set_fact:
-    hosts_extra_localhost_merged: "{{ hosts_extra_localhost }} + {{ ['localhost'] }}"
+    hosts_extra_localhosts_merged: "{{ hosts_extra_localhosts }} + {{ ['localhost'] }}"
 - name: Create /etc/hosts
   template:
     src: hosts.j2

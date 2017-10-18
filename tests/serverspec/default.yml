@@ -3,7 +3,7 @@
     - ansible-role-hosts
   vars:
     hosts_enable_localhost: true
-    hosts_extra_localhost:
+    hosts_extra_localhosts:
       - localhost1
       - localhost2
       - buz.example.org
