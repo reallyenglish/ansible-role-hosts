@@ -3,7 +3,7 @@
 
 - name: Set hosts_extra_localhost
   set_fact:
-    hosts_extra_localhost_merged: "{{ ['localhost'] }} + {{ hosts_extra_localhost }}"
+    hosts_extra_localhost_merged: "{{ hosts_extra_localhost }} + {{ ['localhost'] }}"
 - name: Create /etc/hosts
   template:
     src: hosts.j2

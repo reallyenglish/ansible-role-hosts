@@ -13,7 +13,7 @@ None
 | `hosts_map` | dict containing mapping of hostname and IP address (see an example below)| {} |
 | `hosts_enable_localhost` | if true, create an entry of `localhost` | true |
 | `hosts_enable_ipv6` | if true, create an entry of IPv6 version of `localhost` | true |
-| `hosts_extra_localhost` | list of extra hostname for `127.0.0.1` | `[]` |
+| `hosts_extra_localhost` | list of extra hostname for `127.0.0.1` when `hosts_enable_localhost` is true | `[]` |
 
 Created by [yaml2readme.rb](https://gist.github.com/trombik/b2df709657c08d845b1d3b3916e592d3)
 
