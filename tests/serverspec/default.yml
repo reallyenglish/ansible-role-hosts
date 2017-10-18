@@ -3,6 +3,10 @@
     - ansible-role-hosts
   vars:
     hosts_enable_localhost: true
+    hosts_extra_localhost:
+      - localhost1
+      - localhost2
+      - buz.example.org
     hosts_map:
       "192.168.100.1":
         - foo

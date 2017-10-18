@@ -1,5 +1,5 @@
 {% if hosts_enable_localhost %}
-127.0.0.1 localhost
+127.0.0.1 {{ hosts_extra_localhost_merged | join(' ') }}
 {% endif %}
 {% for k, v in hosts_map.iteritems() %}
 {{ k }} {{ v | join(' ') }}
