@@ -1,7 +1,7 @@
 {% if hosts_enable_localhost %}
 127.0.0.1 {{ hosts_extra_localhosts_merged | join(' ') }}
 {% endif %}
-{% for k, v in hosts_map.iteritems() %}
+{% for k, v in hosts_map|dictsort %}
 {{ k }} {{ v | join(' ') }}
 {% endfor %}
 {% if hosts_enable_ipv6 %}
