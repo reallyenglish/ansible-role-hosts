@@ -1,9 +1,13 @@
+{{ ansible_managed | comment }}
+
 {% if hosts_enable_localhost %}
 127.0.0.1 {{ hosts_extra_localhosts_merged | join(' ') }}
+
 {% endif %}
 {% for k, v in hosts_map.iteritems() %}
 {{ k }} {{ v | join(' ') }}
 {% endfor %}
+
 {% if hosts_enable_ipv6 %}
 ::1     ip6-localhost ip6-loopback
 fe00::0 ip6-localnet
